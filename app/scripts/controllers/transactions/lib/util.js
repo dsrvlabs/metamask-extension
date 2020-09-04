@@ -8,6 +8,9 @@ const normalizers = {
   data: (data) => addHexPrefix(data),
   gas: (gas) => addHexPrefix(gas),
   gasPrice: (gasPrice) => addHexPrefix(gasPrice),
+  feeCurrency: (feeCurrency) => addHexPrefix(feeCurrency).toLowerCase(),
+  gatewayFeeRecipient: (gatewayFeeRecipient) => addHexPrefix(gatewayFeeRecipient).toLowerCase(),
+  gatewayFee: (gatewayFee) => addHexPrefix(gatewayFee),
 }
 
 /**
