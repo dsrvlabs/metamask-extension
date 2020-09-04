@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "postinstall": "rm -rf node_mudules/web3-core/ node_mudules/web3-core-helpers/ node_mudules/web3-eth-contract/; cp -r node_modules/web3/packages/web3-core node_modules/; cp -r node_modules/web3/packages/web3-core-helpers node_modules/; cp -r node_modules/web3/packages/web3-eth-contract node_modules/; ",
     "start": "yarn build dev",
     "dist": "yarn build prod",
     "build": "node development/build/index.js",
@@ -111,7 +112,7 @@
     "eth-trezor-keyring": "^0.4.0",
     "ethereum-ens-network-map": "^1.0.2",
     "ethereumjs-abi": "^0.6.4",
-    "ethereumjs-tx": "1.3.7",
+    "ethereumjs-tx": "git+https://github.com/dsrvlabs/ethereumjs-tx-celo",
     "ethereumjs-util": "5.1.0",
     "ethereumjs-wallet": "^0.6.0",
     "ethers": "^5.0.8",
@@ -168,7 +169,7 @@
     "swappable-obj-proxy": "^1.1.0",
     "textarea-caret": "^3.0.1",
     "valid-url": "^1.0.9",
-    "web3": "^0.20.7",
+    "web3": "git+https://github.com/dsrvlabs/web3-celo.js",
     "web3-stream-provider": "^4.0.0"
   },
   "devDependencies": {

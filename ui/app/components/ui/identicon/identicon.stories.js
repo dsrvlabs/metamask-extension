@@ -22,7 +22,7 @@ export const standard = () => (
 
 export const image = () => (
   <Identicon
-    image="./images/eth_logo.svg"
+    image="./images/celo_logo.svg"
   />
 )
 

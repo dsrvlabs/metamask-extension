@@ -1,3 +1,20 @@
+# Celo Desktopwallet Extention
+
+Metamask like! ( by dsrv)
+www.dsrvlabs.com
+
+** Now we support baklava only!
+** Can charge fee only cUSD 
+** pass 100gwei + 500000unit when send tx
+
+Needs Contribution!
+
+1. Gas station for estimation fee.
+2. Supporting Network settings
+3. feeCurrency Selection 
+
+
+
 # MetaMask Browser Extension
 
 You can find the latest version of MetaMask on [our official website](https://metamask.io/). For help using MetaMask, visit our [User Support Site](https://metamask.zendesk.com/hc/en-us).
