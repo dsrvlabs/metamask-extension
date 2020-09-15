@@ -35,9 +35,12 @@ if (process.env.IN_TEST === 'true') {
 
 const defaultProviderConfig = {
   type: defaultProviderConfigType,
-  rpcTarget: 'https://baklava-forno.celo-testnet.org/',
-  chainId: 62320,
-  nickname:'Baklava',
+  //rpcTarget: 'https://baklava-forno.celo-testnet.org/',
+  rpcTarget: 'https://alfajores-forno.celo-testnet.org/',
+  //chainId: 62320,
+  chainId: 44787,
+  //nickname:'Baklava',
+  nickname:'Alfajores',
 }
 
 const defaultNetworkConfig = {
