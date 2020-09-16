@@ -217,11 +217,11 @@
     "message": "Amount:"
   },
   "appDescription": {
-    "message": "An Ethereum Wallet in your Browser",
+    "message": "A Celo Wallet in your Browser",
     "description": "The description of the application"
   },
   "appName": {
-    "message": "MetaMask",
+    "message": "Celo-desktop-wallet",
     "description": "The name of the application"
   },
   "approve": {

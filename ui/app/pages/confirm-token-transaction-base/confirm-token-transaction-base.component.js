@@ -91,7 +91,7 @@ export default function ConfirmTokenTransactionBase ({
         <div>
           <span>{ `${tokensText} + ` }</span>
           <img
-            src="/images/eth.svg"
+            src="/images/celo.svg"
             height="18"
           />
           <span>{ ethTransactionTotal }</span>
