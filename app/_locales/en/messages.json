@@ -308,7 +308,7 @@
     "message": "Your Browser is not supported..."
   },
   "builtInCalifornia": {
-    "message": "MetaMask is designed and built in California."
+    "message": "https://github.com/dsrvlabs/celo-desktopwallet-extension"
   },
   "buyWithWyre": {
     "message": "Buy ETH with Wyre"
@@ -707,12 +707,12 @@
     "message": "Gas Price"
   },
   "gdprMessage": {
-    "message": "This data is aggregated and is therefore anonymous for the purposes of General Data Protection Regulation (EU) 2016/679. For more information in relation to our privacy practices, please see our $1.",
-    "description": "$1 refers to the gdprMessagePrivacyPolicy message, the translation of which is meant to be used exclusively in the context of gdprMessage"
+    "message": "",
+    "description": ""
   },
   "gdprMessagePrivacyPolicy": {
-    "message": "Privacy Policy here",
-    "description": "this translation is intended to be exclusively used as the replacement for the $1 in the gdprMessage translation"
+    "message": "",
+    "description": ""
   },
   "general": {
     "message": "General"
@@ -925,7 +925,7 @@
     "message": "Click it to manage your connected accounts."
   },
   "metamaskDescription": {
-    "message": "Connecting you to Ethereum and the Decentralized Web."
+    "message": "Connecting you to Celo and the Decentralized Web."
   },
   "metamaskVersion": {
     "message": "MetaMask Version"
@@ -990,7 +990,7 @@
     "message": "New Network"
   },
   "newToMetaMask": {
-    "message": "New to MetaMask?"
+    "message": "New to Celo Desktop Wallet?"
   },
   "noAlreadyHaveSeed": {
     "message": "No, I already have a seed phrase"
@@ -1110,7 +1110,7 @@
     "message": "Primary Currency"
   },
   "primaryCurrencySettingDescription": {
-    "message": "Select native to prioritize displaying values in the native currency of the chain (e.g. ETH). Select Fiat to prioritize displaying values in your selected fiat currency."
+    "message": "Select native to prioritize displaying values in the native currency of the chain (e.g. CELO). Select Fiat to prioritize displaying values in your selected fiat currency."
   },
   "privacyMsg": {
     "message": "Privacy Policy"
@@ -1319,13 +1319,13 @@
     "message": "Send Amount"
   },
   "sendETH": {
-    "message": "Send ETH"
+    "message": "Send CELO"
   },
   "sendTokens": {
     "message": "Send Tokens"
   },
   "sentEther": {
-    "message": "sent ether"
+    "message": "sent CELO"
   },
   "sentTokens": {
     "message": "sent tokens"
@@ -1705,7 +1705,7 @@
     "message": "Welcome Back!"
   },
   "welcome": {
-    "message": "Welcome to MetaMask"
+    "message": "Welcome to Celo Desktop Wallet"
   },
   "whatsThis": {
     "message": "What's this?"

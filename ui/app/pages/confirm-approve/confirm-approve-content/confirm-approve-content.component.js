@@ -88,7 +88,7 @@ export default class ConfirmApproveContent extends Component {
             { formatCurrency(fiatTransactionTotal, currentCurrency) }
           </div>
           <div className="confirm-approve-content__transaction-details-content__secondary-fee">
-            { `${ethTransactionTotal} ETH` }
+            { `${ethTransactionTotal} CELO` }
           </div>
         </div>
       </div>

@@ -140,13 +140,13 @@ export default class UnlockPage extends Component {
     return (
       <div className="unlock-page__container">
         <div className="unlock-page">
-          <div className="unlock-page__mascot-container">
-            <Mascot
-              animationEventEmitter={this.animationEventEmitter}
-              width="120"
-              height="120"
-            />
-          </div>
+          <div className="unlock-page__mascot-container"
+				style={{
+                     backgroundImage: "url('./images/celo_logo.png')",
+                     height: '40px',
+                   }}
+           >
+		 </div> 
           <h1 className="unlock-page__title">
             { t('welcomeBack') }
           </h1>

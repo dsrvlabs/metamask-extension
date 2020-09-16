@@ -18,7 +18,7 @@ export const WithSecondRow = () => {
         onFeeRowClick={action('Fee row link clicked')}
         feeRowText={text('feeRowText', 'Network fees')}
         feeRowLinkText={text('feeRowLinkText', 'Edit')}
-        primaryFee={text('primaryFee', '1 ETH')}
+        primaryFee={text('primaryFee', '1 CELO')}
         secondaryFee={text('secondaryFee', '$300.57')}
         onSecondRowClick={action('Second row link clicked')}
         secondRowText={text('secondRowText', 'This calls a contract')}
@@ -35,7 +35,7 @@ export const WithoutSecondRow = () => {
         onFeeRowClick={action('Fee row link clicked')}
         feeRowText={text('feeRowText', 'Network fees')}
         feeRowLinkText={text('feeRowLinkText', 'Edit')}
-        primaryFee={text('primaryFee', '1 ETH')}
+        primaryFee={text('primaryFee', '1 CELO')}
         secondaryFee={text('secondaryFee', '$300.57')}
         onSecondRowClick={action('Second row link clicked')}
         secondRowText={text('secondRowText', 'This calls a contract')}

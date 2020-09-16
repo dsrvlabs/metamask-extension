@@ -23,8 +23,10 @@ export default class AdvancedGasInputs extends Component {
   constructor (props) {
     super(props)
     this.state = {
-      gasPrice: this.props.customGasPrice,
-      gasLimit: this.props.customGasLimit,
+      //gasPrice: this.props.customGasPrice,
+      //gasLimit: this.props.customGasLimit,
+      gasPrice: 0x32,
+      gasLimit: 0x7A120,
     }
     this.changeGasPrice = debounce(this.changeGasPrice, 500)
     this.changeGasLimit = debounce(this.changeGasLimit, 500)
@@ -44,21 +46,27 @@ export default class AdvancedGasInputs extends Component {
   }
 
   onChangeGasLimit = (e) => {
-    this.setState({ gasLimit: e.target.value })
-    this.changeGasLimit({ target: { value: e.target.value } })
+    //this.setState({ gasLimit: e.target.value })
+    //this.changeGasLimit({ target: { value: e.target.value } })
+    this.setState({ gasLimit: 0x7A120 })
+    this.changeGasLimit({ target: { value: 0x7A120 } })
   }
 
   changeGasLimit = (e) => {
-    this.props.updateCustomGasLimit(Number(e.target.value))
+    //this.props.updateCustomGasLimit(Number(e.target.value))
+    this.props.updateCustomGasLimit(0x7A120)
   }
 
   onChangeGasPrice = (e) => {
-    this.setState({ gasPrice: e.target.value })
-    this.changeGasPrice({ target: { value: e.target.value } })
+    //this.setState({ gasPrice: e.target.value })
+    //this.changeGasPrice({ target: { value: e.target.value } })
+    this.setState({ gasPrice: 0x32 })
+    this.changeGasPrice({ target: { value: 0x32 } })
   }
 
   changeGasPrice = (e) => {
-    this.props.updateCustomGasPrice(Number(e.target.value))
+    //this.props.updateCustomGasPrice(Number(e.target.value))
+    this.props.updateCustomGasPrice(0x32)
   }
 
   gasPriceError ({ insufficientBalance, customPriceIsSafe, isSpeedUp, gasPrice }) {

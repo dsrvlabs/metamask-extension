@@ -8,11 +8,6 @@ function NetworkIndicator ({ disabled, children, hoverText, onClick, providerNam
     <div
       className={classnames('network-component pointer', {
         'network-component--disabled': disabled,
-        'ethereum-network': providerName === 'mainnet',
-        'ropsten-test-network': providerName === 'ropsten',
-        'kovan-test-network': providerName === 'kovan',
-        'rinkeby-test-network': providerName === 'rinkeby',
-        'goerli-test-network': providerName === 'goerli',
       })}
       title={hoverText}
       onClick={(event) => {

@@ -31,7 +31,7 @@ export default class TransactionActivityLog extends PureComponent {
     const { metamaskNetworkId } = primaryTransaction
 
     const prefix = getEtherscanNetworkPrefix(metamaskNetworkId)
-    const etherscanUrl = `https://${prefix}etherscan.io/tx/${hash}`
+    const etherscanUrl = `https://alfajores-blockscout.celo-testnet.org/tx/${hash}`
 
     global.platform.openTab({ url: etherscanUrl })
   }

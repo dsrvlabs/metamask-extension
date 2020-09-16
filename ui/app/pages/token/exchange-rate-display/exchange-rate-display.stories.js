@@ -11,7 +11,7 @@ export const Default = () => {
     <ExchangeRateDisplay
       primaryTokenValue={text('primaryTokenValue', '2000000000000000000')}
       primaryTokenDecimals={number('primaryTokenDecimals', 18)}
-      primaryTokenSymbol={text('primaryTokenSymbol', 'ETH')}
+      primaryTokenSymbol={text('primaryTokenSymbol', 'CELO')}
       secondaryTokenValue={text('secondaryTokenValue', '200000000000000000')}
       secondaryTokenDecimals={number('secondaryTokenDecimals', 18)}
       secondaryTokenSymbol={text('secondaryTokenSymbol', 'ABC')}
@@ -35,7 +35,7 @@ export const WhiteOnBlue = () => {
       <ExchangeRateDisplay
         primaryTokenValue={text('primaryTokenValue', '2000000000000000000')}
         primaryTokenDecimals={number('primaryTokenDecimals', 18)}
-        primaryTokenSymbol={text('primaryTokenSymbol', 'ETH')}
+        primaryTokenSymbol={text('primaryTokenSymbol', 'CELO')}
         secondaryTokenValue={text('secondaryTokenValue', '200000000000000000')}
         secondaryTokenDecimals={number('secondaryTokenDecimals', 18)}
         secondaryTokenSymbol={text('secondaryTokenSymbol', 'ABC')}

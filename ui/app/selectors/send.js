@@ -17,7 +17,8 @@ export function getConversionRate (state) {
 }
 
 export function getNativeCurrency (state) {
-  return state.metamask.nativeCurrency
+  //return state.metamask.nativeCurrency
+  return 'CELO' 
 }
 
 export function getCurrentNetwork (state) {

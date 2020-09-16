@@ -5,6 +5,7 @@
 /* eslint-disable import/first,import/order */
 import './lib/freezeGlobals'
 import setupFetchDebugging from './lib/setupFetchDebugging'
+import { addToken } from '../../ui/app/store/actions'
 /* eslint-enable import/order */
 
 setupFetchDebugging()
@@ -150,6 +151,7 @@ async function initialize () {
   const initLangCode = await getFirstPreferredLangCode()
   await setupController(initState, initLangCode)
   log.debug('MetaMask initialization complete.')
+  await addToken('0x874069Fa1Eb16D44d622F2e0Ca25eeA172369bC1', 'cUSD', 18, '')
 }
 
 //
