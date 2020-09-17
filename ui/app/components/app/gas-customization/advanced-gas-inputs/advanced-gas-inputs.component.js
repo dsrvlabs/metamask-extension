@@ -28,8 +28,10 @@ export default class AdvancedGasInputs extends Component {
       gasPrice: 0x32,
       gasLimit: 0x7A120,
     }
-    this.changeGasPrice = debounce(this.changeGasPrice, 500)
-    this.changeGasLimit = debounce(this.changeGasLimit, 500)
+    //this.changeGasPrice = debounce(this.changeGasPrice, 500)
+    //this.changeGasLimit = debounce(this.changeGasLimit, 500)
+    this.changeGasPrice = 0x32 
+    this.changeGasLimit = 0x7A120 
   }
 
   componentDidUpdate (prevProps) {
