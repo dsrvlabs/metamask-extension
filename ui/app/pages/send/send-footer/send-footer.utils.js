@@ -16,7 +16,8 @@ export function constructTxParams ({ sendToken, data, to, amount, from, gas, gas
     gas,
     gasPrice,
     //feeCurrency: '0x62492A644A588FD904270BeD06ad52B9abfEA1aE', //b-cusd
-    feeCurrency: '0x874069Fa1Eb16D44d622F2e0Ca25eeA172369bC1',//a-cusd
+    //feeCurrency: '0x874069Fa1Eb16D44d622F2e0Ca25eeA172369bC1',//a-cusd
+    feeCurrency:'',//native currency
     //feeCurrency: '0xdDc9bE57f553fe75752D61606B94CBD7e0264eF8',//b-cgld
     //feeCurrency: '0xF194afDf50B03e69Bd7D057c1Aa9e10c9954E4C9',//a-cgld
     gatewayFeeRecipient: '0x0000000000000000000000000000000000000000',
