@@ -31,8 +31,8 @@ describe('App State', function () {
   })
 
   it('sets networkDropdownOpen dropdown to false', function () {
-    const dropdown = { networkDropdowopen: true }
-    const state = { ...metamaskState, ...dropdown }
+    const dropdown = {networkDropdowopen: true}
+    const state = {...metamaskState, ...dropdown}
     const newState = reduceApp(state, {
       type: actions.NETWORK_DROPDOWN_CLOSE,
     })
@@ -55,8 +55,8 @@ describe('App State', function () {
   })
 
   it('closes sidebar', function () {
-    const openSidebar = { sidebar: { isOpen: true } }
-    const state = { ...metamaskState, ...openSidebar }
+    const openSidebar = {sidebar: {isOpen: true}}
+    const state = {...metamaskState, ...openSidebar}
 
     const newState = reduceApp(state, {
       type: actions.SIDEBAR_CLOSE,
@@ -76,8 +76,8 @@ describe('App State', function () {
   })
 
   it('closes alert', function () {
-    const alert = { alertOpen: true, alertMessage: 'test message' }
-    const state = { ...metamaskState, ...alert }
+    const alert = {alertOpen: true, alertMessage: 'test message'}
+    const state = {...metamaskState, ...alert}
     const newState = reduceApp(state, {
       type: actions.ALERT_CLOSE,
     })
@@ -117,7 +117,7 @@ describe('App State', function () {
       },
     }
 
-    const state = { ...metamaskState, appState: { ...opensModal } }
+    const state = {...metamaskState, appState: {...opensModal}}
     const newState = reduceApp(state, {
       type: actions.MODAL_CLOSE,
     })
@@ -189,7 +189,7 @@ describe('App State', function () {
         },
       },
     }
-    const oldState = { ...metamaskState, ...txs }
+    const oldState = {...metamaskState, ...txs}
     const state = reduceApp(oldState, {
       type: actions.SHOW_CONF_TX_PAGE,
       id: 2,
@@ -213,7 +213,7 @@ describe('App State', function () {
       },
     }
 
-    const oldState = { ...metamaskState, ...txs }
+    const oldState = {...metamaskState, ...txs}
 
     const state = reduceApp(oldState, {
       type: actions.COMPLETED_TX,
@@ -256,8 +256,8 @@ describe('App State', function () {
   })
 
   it('sets warning to empty string when unlock succeeds', function () {
-    const errorState = { warning: 'errors' }
-    const oldState = { ...metamaskState, ...errorState }
+    const errorState = {warning: 'errors'}
+    const oldState = {...metamaskState, ...errorState}
     const state = reduceApp(oldState, {
       type: actions.UNLOCK_SUCCEEDED,
     })
@@ -267,14 +267,14 @@ describe('App State', function () {
 
   it('sets hardware wallet default hd path', function () {
     const hdPaths = {
-      trezor: "m/44'/60'/0'/0",
-      ledger: "m/44'/60'/0'",
+      trezor: "m/44'/52752'/0'/0",
+      ledger: "m/44'/52752'/0'",
     }
     const state = reduceApp(metamaskState, {
       type: actions.SET_HARDWARE_WALLET_DEFAULT_HD_PATH,
       value: {
         device: 'ledger',
-        path: "m/44'/60'/0'",
+        path: "m/44'/52752'/0'",
       },
     })
 
@@ -292,8 +292,8 @@ describe('App State', function () {
   })
 
   it('hides loading message', function () {
-    const loadingState = { isLoading: true }
-    const oldState = { ...metamaskState, ...loadingState }
+    const loadingState = {isLoading: true}
+    const oldState = {...metamaskState, ...loadingState}
 
     const state = reduceApp(oldState, {
       type: actions.HIDE_LOADING,
@@ -313,8 +313,8 @@ describe('App State', function () {
   })
 
   it('hides warning', function () {
-    const displayWarningState = { warning: 'warning' }
-    const oldState = { ...metamaskState, ...displayWarningState }
+    const displayWarningState = {warning: 'warning'}
+    const oldState = {...metamaskState, ...displayWarningState}
     const state = reduceApp(oldState, {
       type: actions.HIDE_WARNING,
     })
@@ -351,8 +351,8 @@ describe('App State', function () {
   })
 
   it('unsets gas loading', function () {
-    const gasLoadingState = { gasIsLoading: true }
-    const oldState = { ...metamaskState, ...gasLoadingState }
+    const gasLoadingState = {gasIsLoading: true}
+    const oldState = {...metamaskState, ...gasLoadingState}
     const state = reduceApp(oldState, {
       type: actions.GAS_LOADING_FINISHED,
     })

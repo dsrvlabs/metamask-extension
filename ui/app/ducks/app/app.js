@@ -3,7 +3,7 @@ import * as actionConstants from '../../store/actionConstants'
 // actionConstants
 const SET_THREEBOX_LAST_UPDATED = 'metamask/app/SET_THREEBOX_LAST_UPDATED'
 
-export default function reduceApp (state = {}, action) {
+export default function reduceApp(state = {}, action) {
   // default state
   const appState = Object.assign({
     shouldClose: false,
@@ -39,8 +39,8 @@ export default function reduceApp (state = {}, action) {
     isMouseUser: false,
     gasIsLoading: false,
     defaultHdPaths: {
-      trezor: `m/44'/60'/0'/0`,
-      ledger: `m/44'/60'/0'/0/0`,
+      trezor: `m/44'/52752'/0'/0`,
+      ledger: `m/44'/52752'/0'/0/0`,
     },
     lastSelectedProvider: null,
     networksTabSelectedRpcUrl: '',
@@ -111,7 +111,7 @@ export default function reduceApp (state = {}, action) {
 
     // modal methods:
     case actionConstants.MODAL_OPEN:
-      const { name, ...modalProps } = action.payload
+      const {name, ...modalProps} = action.payload
 
       return {
         ...appState,
@@ -119,9 +119,9 @@ export default function reduceApp (state = {}, action) {
           open: true,
           modalState: {
             name: name,
-            props: { ...modalProps },
+            props: {...modalProps},
           },
-          previousModalState: { ...appState.modal.modalState },
+          previousModalState: {...appState.modal.modalState},
         },
       }
 
@@ -130,9 +130,9 @@ export default function reduceApp (state = {}, action) {
         ...appState,
         modal: Object.assign(
           appState.modal,
-          { open: false },
-          { modalState: { name: null, props: {} } },
-          { previousModalState: appState.modal.modalState },
+          {open: false},
+          {modalState: {name: null, props: {}}},
+          {previousModalState: appState.modal.modalState},
         ),
       }
 
@@ -154,7 +154,7 @@ export default function reduceApp (state = {}, action) {
         warning: null,
       }
 
-      // accounts
+    // accounts
 
     case actionConstants.GO_HOME:
       return {
@@ -233,8 +233,8 @@ export default function reduceApp (state = {}, action) {
       }
 
     case actionConstants.SET_HARDWARE_WALLET_DEFAULT_HD_PATH:
-      const { device, path } = action.value
-      const newDefaults = { ...appState.defaultHdPaths }
+      const {device, path} = action.value
+      const newDefaults = {...appState.defaultHdPaths}
       newDefaults[device] = path
 
       return {
@@ -359,7 +359,7 @@ export default function reduceApp (state = {}, action) {
 }
 
 // Action Creators
-export function setThreeBoxLastUpdated (lastUpdated) {
+export function setThreeBoxLastUpdated(lastUpdated) {
   return {
     type: SET_THREEBOX_LAST_UPDATED,
     value: lastUpdated,
