@@ -18,13 +18,15 @@ export default function setupWeb3 (log) {
   let lastSeenNetwork
   let hasBeenWarned = false
 
-  const web3 = new Web3(window.celo)
+  //const web3 = new Web3(window.celo)
+  const web3 = new Web3(window.ethereum)
   web3.setProvider = function () {
     log.debug('CeloExtensionWallet - overrode web3.setProvider')
   }
   log.debug('CeloExtensionWallet - injected web3')
 
-  Object.defineProperty(window.celo, '_web3Ref', {
+  //Object.defineProperty(window.celo, '_web3Ref', {
+  Object.defineProperty(window.etherum, '_web3Ref', {
     enumerable: false,
     writable: true,
     configurable: true,
@@ -45,7 +47,8 @@ export default function setupWeb3 (log) {
 
       if (shouldLogUsage) {
         const name = stringifyKey(key)
-        window.celo.request({
+        //window.celo.request({
+        window.ethereum.request({
           method: 'metamask_logInjectedWeb3Usage',
           params: [{ action: 'window.web3 get', name }],
         })
@@ -57,7 +60,8 @@ export default function setupWeb3 (log) {
     set: (_web3, key, value) => {
       const name = stringifyKey(key)
       if (shouldLogUsage) {
-        window.celo.request({
+        //window.celo.request({
+        window.ethereum.request({
           method: 'metamask_logInjectedWeb3Usage',
           params: [{ action: 'window.web3 set', name }],
         })
@@ -75,10 +79,12 @@ export default function setupWeb3 (log) {
     value: web3Proxy,
   })
 
-  window.celo._publicConfigStore.subscribe((state) => {
+  //window.celo._publicConfigStore.subscribe((state) => {
+  window.ethereum._publicConfigStore.subscribe((state) => {
     // if the auto refresh on network change is false do not
     // do anything
-    if (!window.celo.autoRefreshOnNetworkChange) {
+    //if (!window.celo.autoRefreshOnNetworkChange) {
+    if (!window.ethereum.autoRefreshOnNetworkChange) {
       return
     }
 
