@@ -21,9 +21,9 @@ export default function setupWeb3 (log) {
   //const web3 = new Web3(window.celo)
   const web3 = new Web3(window.ethereum)
   web3.setProvider = function () {
-    log.debug('CeloExtensionWallet - overrode web3.setProvider')
+    log.debug('MetaMask - overrode web3.setProvider')
   }
-  log.debug('CeloExtensionWallet - injected web3')
+  log.debug('MetaMask - injected web3')
 
   //Object.defineProperty(window.celo, '_web3Ref', {
   Object.defineProperty(window.etherum, '_web3Ref', {
@@ -41,7 +41,7 @@ export default function setupWeb3 (log) {
 
       // show warning once on web3 access
       if (!hasBeenWarned) {
-        console.warn(`CeloExtensionWallet: We will stop injecting web3 in Q4 2020.\nPlease see this article for more information: https://medium.com/metamask/no-longer-injecting-web3-js-4a899ad6e59e`)
+        console.warn(`MetaMask: We will stop injecting web3 in Q4 2020.\nPlease see this article for more information: https://medium.com/metamask/no-longer-injecting-web3-js-4a899ad6e59e`)
         hasBeenWarned = true
       }
 
