@@ -1770,7 +1770,7 @@
 
 "@metamask/inpage-provider@git+https://github.com/dsrvlabs/inpage-provider-celo":
   version "7.0.0"
-  resolved "git+https://github.com/dsrvlabs/inpage-provider-celo#2bff111975243e63e6bea347d0a9593b3ab78be6"
+  resolved "git+https://github.com/dsrvlabs/inpage-provider-celo#ac7f092162b61ae59ddf074530b90f94b2139a85"
   dependencies:
     eth-rpc-errors "^2.1.1"
     fast-deep-equal "^2.0.1"
