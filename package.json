@@ -1,5 +1,5 @@
 {
-  "name": "celodesktopwallet-crx",
+  "name": "celodesktopwallet-legacy-crx",
   "version": "0.0.3",
   "private": true,
   "scripts": {

@@ -35,7 +35,7 @@ function createZipTask (target) {
   return async () => {
     await pump(
       gulp.src(`dist/${target}/**`),
-      gulpZip(`celoextensionwallet-${target}-${baseManifest.version}.zip`),
+      gulpZip(`celoextensionwallet-legacy-${target}-${baseManifest.version}.zip`),
       gulp.dest('builds'),
     )
   }
