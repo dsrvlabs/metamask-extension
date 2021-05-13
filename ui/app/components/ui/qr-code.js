@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import qrCode from 'qrcode-generator'
 import { connect } from 'react-redux'
-import { isHexPrefixed } from 'ethereumjs-util'
+// import { isHexPrefixed } from 'ethereumjs-util'
 import ReadOnlyInput from './readonly-input'
 import { checksumAddress } from '../../helpers/utils/util'
 
@@ -18,8 +18,9 @@ function mapStateToProps (state) {
 
 function QrCodeView (props) {
   const { message, data } = props.Qr
-  const address = `${isHexPrefixed(data) ? 'ethereum:' : ''}${checksumAddress(data)}`
-  const qrImage = qrCode(4, 'M')
+  // const address = `${isHexPrefixed(data) ? 'ethereum:' : ''}${checksumAddress(data)}`
+  const address = `celo://wallet/pay?address=${checksumAddress(data)}&displayName=${''}`
+  const qrImage = qrCode(0, 'M')
   qrImage.addData(address)
   qrImage.make()
 
