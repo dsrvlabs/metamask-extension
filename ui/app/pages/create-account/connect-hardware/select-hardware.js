@@ -24,22 +24,22 @@ export default class SelectHardware extends Component {
     return null
   }
 
-  renderConnectToTrezorButton () {
-    return (
-      <button
-        className={classnames('hw-connect__btn', {
-          'selected': this.state.selectedDevice === 'trezor',
-        })}
-        onClick={(_) => this.setState({ selectedDevice: 'trezor' })}
-      >
-        <img
-          className="hw-connect__btn__img"
-          src="images/trezor-logo.svg"
-          alt=""
-        />
-      </button>
-    )
-  }
+  // renderConnectToTrezorButton () {
+  //   return (
+  //     <button
+  //       className={classnames('hw-connect__btn', {
+  //         'selected': this.state.selectedDevice === 'trezor',
+  //       })}
+  //       onClick={(_) => this.setState({ selectedDevice: 'trezor' })}
+  //     >
+  //       <img
+  //         className="hw-connect__btn__img"
+  //         src="images/trezor-logo.svg"
+  //         alt=""
+  //       />
+  //     </button>
+  //   )
+  // }
 
   renderConnectToLedgerButton () {
     return (
@@ -63,7 +63,7 @@ export default class SelectHardware extends Component {
       <>
         <div className="hw-connect__btn-wrapper">
           {this.renderConnectToLedgerButton()}
-          {this.renderConnectToTrezorButton()}
+          {/* {this.renderConnectToTrezorButton()} */}
         </div>
         <Button
           type="primary"

@@ -245,7 +245,7 @@ export default class ConfirmTransactionBase extends Component {
     }
 
     const notMainnetOrTest = !(isMainnet || process.env.IN_TEST)
-
+    
     return (
       detailsComponent || (
         <div className="confirm-page-container-content__details">
@@ -264,6 +264,7 @@ export default class ConfirmTransactionBase extends Component {
                   updateCustomGasPrice={(newGasPrice) => updateGasAndCalculate({ ...customGas, gasPrice: newGasPrice })}
                   updateCustomGasLimit={(newGasLimit) => updateGasAndCalculate({ ...customGas, gasLimit: newGasLimit })}
                   customGasPrice={customGas.gasPrice}
+                  // customGasPrice="7DEA5"
                   customGasLimit={customGas.gasLimit}
                   insufficientBalance={insufficientBalance}
                   customPriceIsSafe

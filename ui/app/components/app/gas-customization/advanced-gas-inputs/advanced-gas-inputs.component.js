@@ -177,7 +177,6 @@ export default class AdvancedGasInputs extends Component {
         { gasLimitErrorText }
       </div>
     ) : null
-
     return (
       <div className="advanced-gas-inputs__gas-edit-rows">
         { this.renderGasInput({

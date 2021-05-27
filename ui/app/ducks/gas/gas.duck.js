@@ -173,12 +173,12 @@ export function gasEstimatesLoadingFinished () {
 }
 
 async function queryEthGasStationBasic () {
-  const apiKey = process.env.ETH_GAS_STATION_API_KEY ? `?api-key=${process.env.ETH_GAS_STATION_API_KEY}` : ''
-  const url = `https://ethgasstation.info/json/ethgasAPI.json${apiKey}`
+  // const apiKey = process.env.ETH_GAS_STATION_API_KEY ? `?api-key=${process.env.ETH_GAS_STATION_API_KEY}` : ''
+  const url = `https://us-central1-website-tf-f9d00.cloudfunctions.net/celo-getGasPriceMinimum`
   return await window.fetch(url, {
     'headers': {},
-    'referrer': 'http://ethgasstation.info/json/',
-    'referrerPolicy': 'no-referrer-when-downgrade',
+    // 'referrer': 'http://ethgasstation.info/json/',
+    // 'referrerPolicy': 'no-referrer-when-downgrade',
     'body': null,
     'method': 'GET',
     'mode': 'cors',

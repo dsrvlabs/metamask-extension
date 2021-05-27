@@ -82,9 +82,9 @@ const mapStateToProps = (state, ownProps) => {
     ? selectedTransaction.txParams
     : {
       //gas: send.gasLimit || '0x5208',
-      //gasPrice: send.gasPrice || getFastPriceEstimateInHexWEI(state, true),
+      gasPrice: send.gasPrice || getFastPriceEstimateInHexWEI(state, true),
       gas: send.gasLimit || '0x7a120',
-      gasPrice: send.gasPrice || '0x1dcd6500',
+      // gasPrice: send.gasPrice || '0x1dcd6500',
       value: sendToken ? '0x0' : send.amount,
     }
 
