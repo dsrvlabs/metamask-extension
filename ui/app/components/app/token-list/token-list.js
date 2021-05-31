@@ -43,7 +43,7 @@ export default function TokenList({ onTokenClick }) {
 
   return (
     <div>
-      {tokensWithBalances.filter(tokenData => networkAddressChecker[networkId].toLowerCase() !== tokenData.address.toLowerCase()).map((tokenData, index) => {
+      {tokensWithBalances.filter(tokenData => tokenData && tokenData.address && networkAddressChecker[networkId] &&networkAddressChecker[networkId].toLowerCase() !== tokenData.address.toLowerCase()).map((tokenData, index) => {
         tokenData.image = assetImages[tokenData.address]
         return (
           <TokenCell
