@@ -1735,9 +1735,9 @@
   resolved "https://registry.yarnpkg.com/@metamask/eslint-config/-/eslint-config-1.1.0.tgz#03c6fbec8ba3d95fa017d8b98ab5d0701f7458a4"
   integrity sha512-yFFHIxFn3cBd9brIW/+0fJGq16hT0xUyElP0YxiZHaY7j2T/l+X/414L9kqBOuPfPa9bIKulIcJJOfcrMJZp9w==
 
-"@metamask/eth-ledger-bridge-keyring@git+https://github.com/NAKsir-melody/eth-ledger-bridge-keyring-celo":
+"@metamask/eth-ledger-bridge-keyring@git+https://github.com/iovsomnium/eth-ledger-bridge-keyring-celo":
   version "0.3.0"
-  resolved "git+https://github.com/NAKsir-melody/eth-ledger-bridge-keyring-celo#40ef5c050df0179994059423080aa6eedf5995f1"
+  resolved "git+https://github.com/iovsomnium/eth-ledger-bridge-keyring-celo#3aff32f75801c343a3d0f15f8bbb85f2a15b63f5"
   dependencies:
     eth-sig-util "^1.4.2"
     ethereumjs-tx "git+https://github.com/dsrvlabs/ethereumjs-tx-celo"
