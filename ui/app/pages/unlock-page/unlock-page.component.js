@@ -4,7 +4,7 @@ import Button from '@material-ui/core/Button'
 import TextField from '../../components/ui/text-field'
 import getCaretCoordinates from 'textarea-caret'
 import { EventEmitter } from 'events'
-import Mascot from '../../components/ui/mascot'
+// import Mascot from '../../components/ui/mascot'
 import { DEFAULT_ROUTE } from '../../helpers/constants/routes'
 
 export default class UnlockPage extends Component {
@@ -140,13 +140,14 @@ export default class UnlockPage extends Component {
     return (
       <div className="unlock-page__container">
         <div className="unlock-page">
-          <div className="unlock-page__mascot-container"
-				style={{
-                     backgroundImage: "url('./images/celo_logo.png')",
-                     height: '40px',
-                   }}
-           >
-		 </div> 
+          <div
+            className="unlock-page__mascot-container"
+            style={{
+              backgroundImage: "url('./images/celo_logo.png')",
+              height: '40px',
+            }}
+          >
+          </div>
           <h1 className="unlock-page__title">
             { t('welcomeBack') }
           </h1>

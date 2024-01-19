@@ -7066,7 +7066,7 @@ concat-stream@^1.4.6, concat-stream@^1.5.0, concat-stream@^1.5.1, concat-stream@
 
 "concat-stream@github:dsrvlabs/concat-stream#feat/smaller":
   version "2.0.0"
-  resolved "https://codeload.github.com/dsrvlabs/concat-stream/tar.gz/057bc7b5d6d8df26c8cf00a3f151b6721a0a8034"
+  resolved "https://registry.npm.taobao.org/concat-stream/download/concat-stream-2.0.0.tgz#414cf5af790a48c60ab9be4527d56d5e41133cb1"
   dependencies:
     inherits "^2.0.3"
     readable-stream "^3.0.2"
@@ -18684,7 +18684,7 @@ ncp@^2.0.0:
 
 "ndjson@github:dsrvlabs/ndjson#feat/readable-stream3":
   version "1.5.0"
-  resolved "https://codeload.github.com/dsrvlabs/ndjson/tar.gz/4db16da6b42e5b39bf300c3a7cde62abb3fa3a11"
+  resolved "https://registry.npmjs.org/ndjson/-/ndjson-1.5.0.tgz"
   dependencies:
     json-stringify-safe "^5.0.1"
     minimist "^1.2.0"
